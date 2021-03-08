@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZordanLS/JordanLesur_3_03032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZordanLS/JordanLesur_3_03032021/issues"
+  },
+  "homepage": "https://github.com/ZordanLS/JordanLesur_3_03032021#readme"
+}
