@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/cc06608881.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Shrikhand">
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <title>OhMyFood! - Jordan Lesur</title>
 </head>
@@ -19,19 +17,24 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>ohmyfood</h1>
+    <div class="header">
+      <img class="header__logo" src="images/ohmyfood.png">
+    </div>
   </header>
   <!-- Section 1 -->
-  <section>
-    <div><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
+  <section class="location">
+    <i class="fas fa-map-marker-alt location__icon"></i>
+    <div class="location__text">Paris, Belleville</div>
   </section>
   <!-- Section 2 -->
-  <section>
+  <section class="discover">
     <h2>Réservez le menu qui vous convient</h2>
     <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
-    <div>
-      <a href="#restaurants">Explorez nos restaurants</a>
+    <a href="#restaurants">
+      <div class="explorebtn">
+      Explorez nos restaurants
     </div>
+  </a>
   </section>
   <!-- Section 3 -->
   <section>
@@ -54,11 +57,11 @@
       </li>
     </ol>
   </section>
-  <!-- Section 4 -->
+  <!-- Section 4 --
   <section>
     <h2>Restaurants</h2>
     <a href="#" class="card">
-      <img src="images/lapalettedugout.jpg" class="cardimg" alt="La palette du goût"/>
+      <img src="images/lapalettedugout.jpg" class="cardimg" alt="La palette du goût" />
       <div class="cardbottom">
         <h3 class="cardtitle">La palette du goût</h3>
         <h4 class="cardtext">Ménilmontant</h4>
@@ -66,7 +69,7 @@
       </div>
     </a>
     <a href="#" class="card">
-      <img src="images/lanoteenchantee.jpg" class="cardimg" alt="La note enchantée"/>
+      <img src="images/lanoteenchantee.jpg" class="cardimg" alt="La note enchantée" />
       <div class="cardbottom">
         <h3 class="cardtitle">La note enchantée</h3>
         <h4 class="cardtext">Charonne</h4>
@@ -74,7 +77,7 @@
       </div>
     </a>
     <a href="#" class="card">
-      <img src="images/alafrancaise.jpg" class="cardimg" alt="À la française"/>
+      <img src="images/alafrancaise.jpg" class="cardimg" alt="À la française" />
       <div class="cardbottom">
         <h3 class="cardtitle">À la française</h3>
         <h4 class="cardtext">Cité Rouge</h4>
@@ -82,7 +85,7 @@
       </div>
     </a>
     <a href="#" class="card">
-      <img src="images/ledelicedessens.jpg" class="cardimg" alt="Le délice des sens"/>
+      <img src="images/ledelicedessens.jpg" class="cardimg" alt="Le délice des sens" />
       <div class="cardbottom">
         <h3 class="cardtitle">Le délice des sens</h3>
         <h4 class="cardtext">Folie-Méricourt</h4>

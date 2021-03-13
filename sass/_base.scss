@@ -1,0 +1,25 @@
+body,
+html {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 8px -2px #999;
+    &__logo {
+        height: 2rem;
+        width: auto;
+        margin-top: 1.8rem;
+        margin-bottom: 1.1rem;
+    }
+}
