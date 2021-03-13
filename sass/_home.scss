@@ -174,8 +174,9 @@
                     background: -webkit-linear-gradient(#9356dc, #ff79da);
                     fill: -webkit-linear-gradient(#9356dc, #ff79da);
                     -webkit-background-clip: text;
+                    background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke: 1px transparent;
+                    -webkit-text-stroke: 0px transparent;
                 }
             }
         }
