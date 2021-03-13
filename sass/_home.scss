@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: none;
+    margin-bottom: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 4rem;
@@ -37,7 +37,7 @@
         margin-top: 0.5rem;
         margin-bottom: 2rem;
     }
-    .explorebtn {
+    &__btn {
         background-image: linear-gradient(0deg, #9356dc, #ff79da);
         font-size: 1rem;
         font-weight: 400;
@@ -48,6 +48,146 @@
         &:hover {
             transform: scale(1.05);
             opacity: 90%;
+        }
+    }
+}
+.guide {
+    padding-bottom: 3rem;
+    h2 {
+        padding-left: 1.5rem;
+    }
+    a {
+        color: black;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__btn {
+            width: 20rem;
+            border-radius: 20px;
+            box-shadow: 4px 4px 8px -2px #999;
+            padding: 0.8rem;
+            margin: 0.5rem;
+            background-color: #f6f6f6;
+            &__icon {
+                color: gray;
+                margin: 1rem 1rem;
+            }
+            &__number {
+                background-color: #9356dc;
+                color: white;
+                border-radius: 40px;
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+                padding-top: 0.1rem;
+                padding-bottom: 0.1rem;
+                position: relative;
+                left: -1.2rem;
+            }
+            &:hover {
+                background-color: rgba($color: #9356dc, $alpha: 0.1);
+                transform: scale(1.01);
+            }
+            &:hover &__icon {
+                color: #9356dc;
+            }
+        }
+    }
+}
+#restaurants {
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    h2 {
+        padding-left: 1.5rem;
+    }
+    a {
+        color: black;
+    }
+}
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    &__card {
+        height: 16rem;
+        margin: 0px 15px;
+        margin-bottom: 25px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        border: transparent 0px solid;
+        border-radius: 20px;
+        position: relative;
+        &__new {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #99e2d0;
+            color: #008766;
+            width: 6rem;
+            height: 2rem;
+            font-weight: 500;
+            border-radius: 3px;
+        }
+        &:hover {
+            transform: scale(1.01);
+        }
+        &__img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+            width: 100%;
+            height: 11rem;
+        }
+        &__bottom {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-size: 1rem;
+            margin-left: 1rem;
+            height: 4rem;
+            &__title {
+                margin-top: 0.6rem;
+                margin-bottom: 0rem;
+            }
+            &__text {
+                font-weight: 400;
+                margin-top: 0.3rem;
+                margin-bottom: 0rem;
+            }
+            &__icon {
+                align-self: flex-end;
+                position: relative;
+                top: 1.5rem;
+                right: 1.5rem;
+                font-size: 1.5rem;
+                color: white;
+                -webkit-text-stroke: 1px black;
+                &:hover {
+                    background: -webkit-linear-gradient(#9356dc, #ff79da);
+                    fill: -webkit-linear-gradient(#9356dc, #ff79da);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke: 1px transparent;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    .cardcontainer {
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        &__card {
+            flex-basis: 45%;
         }
     }
 }

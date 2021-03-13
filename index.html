@@ -18,89 +18,98 @@
   <!-- Header -->
   <header>
     <div class="header">
-      <img class="header__logo" src="images/ohmyfood.png">
+      <img class="header__logo" src="images/ohmyfood.png" alt="OhMyFood!">
     </div>
   </header>
   <!-- Section 1 -->
-  <section class="location">
+  <div class="location">
     <i class="fas fa-map-marker-alt location__icon"></i>
     <div class="location__text">Paris, Belleville</div>
-  </section>
+  </div>
   <!-- Section 2 -->
   <section class="discover">
     <h2>Réservez le menu qui vous convient</h2>
     <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
     <a href="#restaurants">
-      <div class="explorebtn">
-      Explorez nos restaurants
-    </div>
-  </a>
+      <div class="discover__btn">
+        Explorez nos restaurants
+      </div>
+    </a>
   </section>
   <!-- Section 3 -->
-  <section>
+  <section class="guide">
     <h2>Fonctionnement</h2>
-    <ol>
-      <li>
-        <div>
-          <a href="#"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</a>
+    <div class="guide__container">
+      <a href="#">
+        <div class="guide__container__btn">
+          <span class="guide__container__btn__number">1</span><i
+            class="fas fa-mobile-alt guide__container__btn__icon"></i>Choisissez un restaurant
         </div>
-      </li>
-      <li>
-        <div>
-          <a href="#"><i class="fas fa-list-ul"></i>Composez votre menu</a>
+      </a>
+      <a href="#">
+        <div class="guide__container__btn">
+          <span class="guide__container__btn__number">2</span><i
+            class="fas fa-list-ul guide__container__btn__icon"></i>Composez votre menu
         </div>
-      </li>
-      <li>
-        <div>
-          <a href="#"><i class="fas fa-store"></i>Dégustez au restaurant</a>
+      </a>
+      <a href="#">
+        <div class="guide__container__btn">
+          <span class="guide__container__btn__number">3</span><i
+            class="fas fa-store guide__container__btn__icon"></i>Dégustez au restaurant
         </div>
-      </li>
-    </ol>
+      </a>
+    </div>
   </section>
-  <!-- Section 4 --
-  <section>
+  <!-- Section 4 -->
+  <section id="restaurants">
     <h2>Restaurants</h2>
-    <a href="#" class="card">
-      <img src="images/lapalettedugout.jpg" class="cardimg" alt="La palette du goût" />
-      <div class="cardbottom">
-        <h3 class="cardtitle">La palette du goût</h3>
-        <h4 class="cardtext">Ménilmontant</h4>
-        <i class="fas fa-heart"></i>
-      </div>
-    </a>
-    <a href="#" class="card">
-      <img src="images/lanoteenchantee.jpg" class="cardimg" alt="La note enchantée" />
-      <div class="cardbottom">
-        <h3 class="cardtitle">La note enchantée</h3>
-        <h4 class="cardtext">Charonne</h4>
-        <i class="fas fa-heart"></i>
-      </div>
-    </a>
-    <a href="#" class="card">
-      <img src="images/alafrancaise.jpg" class="cardimg" alt="À la française" />
-      <div class="cardbottom">
-        <h3 class="cardtitle">À la française</h3>
-        <h4 class="cardtext">Cité Rouge</h4>
-        <i class="fas fa-heart"></i>
-      </div>
-    </a>
-    <a href="#" class="card">
-      <img src="images/ledelicedessens.jpg" class="cardimg" alt="Le délice des sens" />
-      <div class="cardbottom">
-        <h3 class="cardtitle">Le délice des sens</h3>
-        <h4 class="cardtext">Folie-Méricourt</h4>
-        <i class="fas fa-heart"></i>
-      </div>
-    </a>
+    <div class="cardcontainer">
+      <a href="#" class="cardcontainer__card">
+        <img src="images/lapalettedugout.jpg" class="cardcontainer__card__img" alt="La palette du goût" />
+        <div class="cardcontainer__card__new">Nouveau</div>
+        <div class="cardcontainer__card__bottom">
+          <h3 class="cardcontainer__card__bottom__title">La palette du goût</h3>
+          <h4 class="cardcontainer__card__bottom__text">Ménilmontant</h4>
+          <i class="fas fa-heart cardcontainer__card__bottom__icon"></i>
+        </div>
+      </a>
+      <a href="#" class="cardcontainer__card">
+        <img src="images/lanoteenchantee.jpg" class="cardcontainer__card__img" alt="La note enchantée" />
+        <div class="cardcontainer__card__new">Nouveau</div>
+        <div class="cardcontainer__card__bottom">
+          <h3 class="cardcontainer__card__bottom__title">La note enchantée</h3>
+          <h4 class="cardcontainer__card__bottom__text">Charonne</h4>
+          <i class="fas fa-heart cardcontainer__card__bottom__icon"></i>
+        </div>
+      </a>
+      <a href="#" class="cardcontainer__card">
+        <img src="images/alafrancaise.jpg" class="cardcontainer__card__img" alt="À la française" />
+        <div class="cardcontainer__card__bottom">
+          <h3 class="cardcontainer__card__bottom__title">À la française</h3>
+          <h4 class="cardcontainer__card__bottom__text">Cité Rouge</h4>
+          <i class="fas fa-heart cardcontainer__card__bottom__icon"></i>
+        </div>
+      </a>
+      <a href="#" class="cardcontainer__card">
+        <img src="images/ledelicedessens.jpg" class="cardcontainer__card__img" alt="Le délice des sens" />
+        <div class="cardcontainer__card__bottom">
+          <h3 class="cardcontainer__card__bottom__title">Le délice des sens</h3>
+          <h4 class="cardcontainer__card__bottom__text">Folie-Méricourt</h4>
+          <i class="fas fa-heart cardcontainer__card__bottom__icon"></i>
+        </div>
+      </a>
+    </div>
   </section>
   <!-- Footer -->
-  <footer>
-    <div class="footerbloc">
-      <h3>ohmyfood</h3>
-      <a class="footerlink" href="#"><i class="fas fa-utensils footericon"></i>Proposer un restaurant</a>
-      <a class="footerlink" href="#"><i class="fas fa-hands-helping footericon"></i>Devenir partenaire</a>
-      <a class="footerlink" href="#">Mentions légales</a>
-      <a class="footerlink" href="#">Contact</a>
+  <footer class="footer">
+    <h3>ohmyfood</h3>
+    <div class="footer__bloc">
+      <a class="footer__bloc__link" href="#"><i class="fas fa-utensils footer__bloc__icon"></i>Proposer un
+        restaurant</a>
+      <a class="footer__bloc__link" href="#"><i class="fas fa-hands-helping footer__bloc__icon"></i>Devenir
+        partenaire</a>
+      <a class="footer__bloc__link" href="#">Mentions légales</a>
+      <a class="footer__bloc__link" href="#">Contact</a>
     </div>
   </footer>
 </body>
