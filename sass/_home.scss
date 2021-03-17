@@ -63,6 +63,9 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         &__btn {
+            @media screen and (max-width: 374px) {
+                width: 16rem;
+            }
             width: 20rem;
             border-radius: 20px;
             box-shadow: 4px 4px 8px -2px #999;
