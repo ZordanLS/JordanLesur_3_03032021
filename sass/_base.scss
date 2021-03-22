@@ -34,6 +34,10 @@ h2 {
         margin-top: 0rem;
     }
     &__bloc {
+        @media screen and (min-width: 700px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
         display: flex;
         flex-direction: column;
         padding-bottom: 2rem;

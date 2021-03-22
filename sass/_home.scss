@@ -1,3 +1,49 @@
+.loadercontainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    animation: spinnerbackground 2s linear;
+    animation-fill-mode: forwards;
+    @keyframes spinnerbackground {
+        70% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    &__loader {
+        border: 1rem solid #ff79da;
+        border-top: 1rem solid #9356dc;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        animation: spinner 2s linear;
+        position: fixed;
+        left: 50%;
+        top: 45%;
+        margin-left: -3.5rem;
+        z-index: 9999;
+        animation-fill-mode: forwards;
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+            70% {
+                transform: rotate(360deg);
+                opacity: 100%;
+            }
+            100% {
+                transform: rotate(515deg);
+                opacity: 0;
+            }
+        }
+    }
+}
+
 .location {
     background-color: #eaeaea;
     display: flex;
@@ -120,6 +166,7 @@
     &__card {
         @media screen and (min-width: 800px) {
             flex-basis: 45%;
+            height: 20rem;
         }
         height: 16rem;
         margin: 0px 15px;
@@ -148,6 +195,9 @@
             transform: scale(1.01);
         }
         &__img {
+            @media screen and (min-width: 800px) {
+                height: 15rem;
+            }
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             object-fit: cover;
@@ -181,8 +231,8 @@
                 color: white;
                 -webkit-text-stroke: 1px black;
                 &:hover {
-                    background: -webkit-linear-gradient(#9356dc, #ff79da);
-                    fill: -webkit-linear-gradient(#9356dc, #ff79da);
+                    background: linear-gradient(#9356dc, #ff79da);
+                    fill: linear-gradient(#9356dc, #ff79da);
                     -webkit-background-clip: text;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;

@@ -90,40 +90,103 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             &__btn {
-                @media screen and (max-width: 374px) {
-                    width: 16rem;
-                }
+                position: relative;
+                overflow: hidden;
                 background-color: white;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
                 color: #101010;
                 width: 20rem;
-                height: 3rem;
+                height: 4rem;
                 border-radius: 14px;
                 box-shadow: 4px 4px 8px -2px #999;
                 margin: 0.5rem;
-                padding: 0.5rem;
                 justify-content: center;
+                @media screen and (max-width: 374px) {
+                    width: 16rem;
+                }
+                &:hover {
+                    .menu__bloc__container__btn__subtitle {
+                        animation: subtitle 0.3s linear;
+                        animation-fill-mode: forwards;
+                        @keyframes subtitle {
+                            0% {
+                                max-width: 14rem;
+                            }
+                            100% {
+                                max-width: 11rem;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                    .menu__bloc__container__btn__price {
+                        animation: price 0.3s linear;
+                        animation-fill-mode: forwards;
+                        @keyframes price {
+                            100% {
+                                transform: translateX(-4rem);
+                            }
+                        }
+                    }
+                    .menu__bloc__container__btn__tick {
+                        animation: tick 0.3s linear;
+                        animation-fill-mode: forwards;
+                        @keyframes tick {
+                            100% {
+                                transform: translateX(-4rem);
+                            }
+                        }
+                    }
+                    .menu__bloc__container__btn__tick__icon {
+                        animation: tickicon 0.3s linear;
+                        @keyframes tickicon {
+                            0% {
+                                transform: rotate(0deg);
+                            }
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                }
                 &__title {
                     font-weight: bold;
                     padding-top: 0.2rem;
                     padding-bottom: 0.2rem;
-                    padding-left: 0.2rem;
+                    padding-left: 1rem;
                 }
                 &__subtitle {
-                    font-size: 0.9rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-size: 0.8rem;
                     font-weight: 400;
-                    padding-left: 0.2rem;
+                    padding-left: 1rem;
                 }
                 &__price {
                     display: flex;
                     align-self: flex-end;
                     font-size: 1rem;
                     font-weight: bold;
-                    color: #353535;
-                    padding-right: 0.5rem;
                     padding-top: 1.7rem;
+                    color: #353535;
+                    position: absolute;
+                    right: 1.5rem;
+                }
+                &__tick {
+                    position: relative;
+                    left: 4.01rem;
+                    display: flex;
+                    align-self: flex-end;
+                    height: 4rem;
+                    width: 4rem;
+                    background-color: #99e2d0;
+                    justify-content: center;
+                    &__icon {
+                        align-self: center;
+                        font-size: 1.6rem;
+                        color: white;
+                    }
                 }
             }
         }
