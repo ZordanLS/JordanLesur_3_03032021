@@ -157,8 +157,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-items: center;
-    flex-basis: 90%;
+    justify-content: center;
     @media screen and (min-width: 800px) {
         flex-direction: row;
         align-content: center;
@@ -169,6 +168,7 @@
             flex-basis: 45%;
             height: 20rem;
         }
+        flex-basis: 90%;
         height: 16rem;
         margin: 0px 15px;
         margin-bottom: 25px;
