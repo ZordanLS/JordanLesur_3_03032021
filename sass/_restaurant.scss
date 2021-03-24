@@ -90,15 +90,15 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             animation: containerappear 1s ease-out;
-                        @keyframes containerappear {
-                            0% {
-                                transform: translateY(1rem);
-                                opacity: 0%;
-                            }
-                            100% {
-                                transform: translateY(0rem);
-                            }
-                        }
+            @keyframes containerappear {
+                0% {
+                    transform: translateY(1rem);
+                    opacity: 0%;
+                }
+                100% {
+                    transform: translateY(0rem);
+                }
+            }
             &__btn {
                 position: relative;
                 overflow: hidden;
