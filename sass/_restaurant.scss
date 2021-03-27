@@ -44,11 +44,11 @@
             font-size: 1.5rem;
             color: #f6f6f6;
             -webkit-text-stroke: 1px black;
+            cursor: pointer;
             &:hover {
                 background: -webkit-linear-gradient(#9356dc, #ff79da);
                 fill: -webkit-linear-gradient(#9356dc, #ff79da);
                 -webkit-background-clip: text;
-                background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke: 0px transparent;
             }
@@ -127,62 +127,25 @@
                 }
                 &:hover {
                     .menu__bloc__container__btn__title {
-                        animation: title 0.3s linear;
-                        animation-fill-mode: forwards;
-                        @keyframes title {
-                            0% {
-                                max-width: 17rem;
-                            }
-                            100% {
-                                max-width: 14rem;
-                                text-overflow: ellipsis;
-                            }
-                        }
+                        max-width: 14rem;
                     }
                     .menu__bloc__container__btn__subtitle {
-                        animation: subtitle 0.3s linear;
-                        animation-fill-mode: forwards;
-                        @keyframes subtitle {
-                            0% {
-                                max-width: 14rem;
-                            }
-                            100% {
-                                max-width: 11rem;
-                                text-overflow: ellipsis;
-                            }
-                        }
+                        max-width: 11rem;
                     }
                     .menu__bloc__container__btn__price {
-                        animation: price 0.3s linear;
-                        animation-fill-mode: forwards;
-                        @keyframes price {
-                            100% {
-                                transform: translateX(-4rem);
-                            }
-                        }
+                        transform: translateX(-4rem);
                     }
                     .menu__bloc__container__btn__tick {
-                        animation: tick 0.3s linear;
-                        animation-fill-mode: forwards;
-                        @keyframes tick {
-                            100% {
-                                transform: translateX(-4rem);
-                            }
-                        }
+                        transform: translateX(-4rem);
                     }
                     .menu__bloc__container__btn__tick__icon {
-                        animation: tickicon 0.3s linear;
-                        @keyframes tickicon {
-                            0% {
-                                transform: rotate(0deg);
-                            }
-                            100% {
-                                transform: rotate(360deg);
-                            }
-                        }
+                        transform: rotate(360deg);
                     }
                 }
                 &__title {
+                    max-width: 18rem;
+                    text-overflow: ellipsis;
+                    transition-duration: 0.5s;
                     white-space: nowrap;
                     overflow: hidden;
                     font-weight: bold;
@@ -191,6 +154,9 @@
                     padding-left: 1rem;
                 }
                 &__subtitle {
+                    max-width: 16rem;
+                    text-overflow: ellipsis;
+                    transition-duration: 0.5s;
                     white-space: nowrap;
                     overflow: hidden;
                     font-size: 0.8rem;
@@ -198,6 +164,8 @@
                     padding-left: 1rem;
                 }
                 &__price {
+                    text-overflow: ellipsis;
+                    transition-duration: 0.5s;
                     display: flex;
                     align-self: flex-end;
                     font-size: 1rem;
@@ -208,13 +176,7 @@
                     right: 1.5rem;
                 }
                 &__tick {
-                    animation: reversetick 0.3s linear;
-                    animation-fill-mode: forwards;
-                    @keyframes reversetick {
-                        100% {
-                            transform: translateX(0rem);
-                        }
-                    }
+                    transition-duration: 0.5s;
                     position: relative;
                     left: 4.01rem;
                     display: flex;
@@ -224,6 +186,7 @@
                     background-color: #99e2d0;
                     justify-content: center;
                     &__icon {
+                        transition-duration: 0.5s;
                         align-self: center;
                         font-size: 1.6rem;
                         color: white;
@@ -250,9 +213,9 @@
         border-radius: 100px;
         padding: 1rem 1.3rem;
         box-shadow: 4px 4px 8px -2px #999;
-        &:hover {
-            transform: scale(1.05);
-            opacity: 90%;
-        }
+    }
+    &:hover {
+        transform: scale(1.05);
+        opacity: 90%;
     }
 }

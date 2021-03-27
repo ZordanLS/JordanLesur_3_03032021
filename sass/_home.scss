@@ -233,9 +233,7 @@
                 -webkit-text-stroke: 1px black;
                 &:hover {
                     background: linear-gradient(#9356dc, #ff79da);
-                    fill: linear-gradient(#9356dc, #ff79da);
                     -webkit-background-clip: text;
-                    background-clip: text;
                     -webkit-text-fill-color: transparent;
                     -webkit-text-stroke: 0px transparent;
                 }
