@@ -232,10 +232,32 @@
                 color: white;
                 -webkit-text-stroke: 1px black;
                 &:hover {
-                    background: linear-gradient(#9356dc, #ff79da);
+                    background: linear-gradient(180deg, #ffffff, #ffffff, #ff79da, #9356dc);
+                    background-size: 400% 400%;
+                    background-clip: text;
+                    -webkit-text-stroke: 0px transparent;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    -webkit-text-stroke: 0px transparent;
+                    animation: fill 1s linear;
+                    animation-fill-mode: forwards;
+                    @keyframes fill {
+                        0% {
+                            background-position: 0% 0%;
+                            -webkit-text-stroke: 1px black;
+                        }
+                        50% {
+                            background-position: 0% 15%;
+                            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+                        }
+                        90% {
+                            background-position: 0% 60%;
+                            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+                        }
+                        100% {
+                            background-position: 0% 77%;
+                            -webkit-text-stroke: 1px rgba(255, 121, 218, 1);
+                        }
+                    }
                 }
             }
         }
