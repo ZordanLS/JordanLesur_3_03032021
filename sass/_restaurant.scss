@@ -242,9 +242,9 @@
         border-radius: 100px;
         padding: 1rem 1.3rem;
         box-shadow: 4px 4px 8px -2px #999;
-    }
-    &:hover {
-        transform: scale(1.05);
-        opacity: 90%;
+        &:hover {
+            transform: scale(1.05);
+            opacity: 90%;
+        }
     }
 }
