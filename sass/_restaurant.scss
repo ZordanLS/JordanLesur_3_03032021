@@ -47,31 +47,31 @@
             cursor: pointer;
             &:hover {
                 background: linear-gradient(180deg, #f6f6f6, #f6f6f6, #ff79da, #9356dc);
-                    background-size: 400% 400%;
-                    background-clip: text;
-                    -webkit-text-stroke: 0px transparent;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    animation: fill 1s linear;
-                    animation-fill-mode: forwards;
-                    @keyframes fill {
-                        0% {
-                            background-position: 0% 0%;
-                            -webkit-text-stroke: 1px black;
-                        }
-                        50% {
-                            background-position: 0% 15%;
-                            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
-                        }
-                        90% {
-                            background-position: 0% 60%;
-                            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
-                        }
-                        100% {
-                            background-position: 0% 77%;
-                            -webkit-text-stroke: 1px rgba(255, 121, 218, 1);
-                        }
+                background-size: 400% 400%;
+                background-clip: text;
+                -webkit-text-stroke: 0px transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: fill 1s linear;
+                animation-fill-mode: forwards;
+                @keyframes fill {
+                    0% {
+                        background-position: 0% 0%;
+                        -webkit-text-stroke: 1px black;
                     }
+                    50% {
+                        background-position: 0% 15%;
+                        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+                    }
+                    90% {
+                        background-position: 0% 60%;
+                        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+                    }
+                    100% {
+                        background-position: 0% 77%;
+                        -webkit-text-stroke: 1px rgba(255, 121, 218, 1);
+                    }
+                }
             }
         }
     }
@@ -89,6 +89,14 @@
 }
 .menu {
     background-color: #f6f6f6;
+    .maincourse {
+        animation-delay: 0.5s;
+        animation-fill-mode: backwards;
+    }
+    .dessert {
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
     &__bloc {
         padding-top: 2rem;
         &__title {
@@ -106,20 +114,20 @@
             margin-bottom: 0.3rem;
             margin-left: 1.5rem;
         }
+        animation: containerappear 1s ease-out;
+        @keyframes containerappear {
+            0% {
+                transform: translateY(1rem);
+                opacity: 0%;
+            }
+            100% {
+                transform: translateY(0rem);
+            }
+        }
         &__container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            animation: containerappear 1s ease-out;
-            @keyframes containerappear {
-                0% {
-                    transform: translateY(1rem);
-                    opacity: 0%;
-                }
-                100% {
-                    transform: translateY(0rem);
-                }
-            }
             &__btn {
                 position: relative;
                 overflow: hidden;
