@@ -48,7 +48,7 @@
             &:hover {
                 background: linear-gradient(180deg, #f6f6f6, #f6f6f6, #ff79da, #9356dc);
                 background-size: 400% 400%;
-                background-clip: text;
+                background-clip: content-box;
                 -webkit-text-stroke: 0px transparent;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
